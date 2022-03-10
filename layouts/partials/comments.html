@@ -1,5 +1,8 @@
-{{ if and (.Site.DisqusShortname) (.Param "comments") (not .Site.IsServer) }}
-<section class="comments block">
-	{{ template "_internal/disqus.html" . }}
-</section>
-{{ end }}
+<script src="https://utteranc.es/client.js"
+        repo="bugok/blog"
+        issue-term="pathname"
+        label="utterances"
+        theme="github-dark-orange"
+        crossorigin="anonymous"
+        async>
+</script>
